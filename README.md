@@ -262,8 +262,6 @@ To prevent misuse by adversaries, this repository contains **documentation only*
 |---|---|
 | **Name** | Laurent Giovannoni |
 | **LinkedIn** | [linkedin.com/in/giovannonilaurent](https://linkedin.com/in/giovannonilaurent) |
-| **Context** | E-MSc Cybersecurity — Master's Thesis |
-| **Security** | security@scambuster.io (for responsible disclosure) |
 
 ---
 
@@ -292,7 +290,7 @@ To prevent misuse by adversaries, this repository contains **documentation only*
 ### Citation
 
 ```bibtex
-@mastersthesis{giovannoni2025scambuster,
+@master{giovannoni2025scambuster,
   author = {Giovannoni, Laurent},
   title = {ScamBuster: Adaptive Scambaiting via Multi-Armed Bandits
            for Automated Threat Intelligence Extraction},
