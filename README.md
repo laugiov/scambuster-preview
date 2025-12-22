@@ -11,27 +11,19 @@
 
 ScamBuster turns inbound scam emails into **actionable threat intelligence** through **controlled, policy-driven engagement**.
 
-- **Purpose:** defensive security, fraud prevention, and applied research — *not* offensive use.
-- **Focus:** extract IOCs, understand campaigns, measure what works, and export intelligence (STIX/MISP-ready).
-- **Approach:** safety-gated, cost-aware, fully auditable workflows (docs-only public repo).
+The project serves defensive security, fraud prevention, and applied research purposes (not offensive use). It extracts IOCs, maps campaigns, measures engagement effectiveness, and exports intelligence in STIX/MISP formats. All workflows are safety-gated, cost-aware, and fully auditable.
 
 > This repository is a **public preview** (documentation only). Operational assets remain private to prevent misuse.
 
 ---
 
-## The Problem: Email Scams Are High-Volume — and Mostly "Invisible" to Defenders
+## The Problem: Email Scams Are High-Volume, and Mostly "Invisible" to Defenders
 
-Email scams operate at massive scale. Most security programs are forced into a **block-and-forget** posture: the message is removed, but the attacker infrastructure, financial rails, and campaign signals remain largely unobserved.
+Email scams operate at massive scale. Most security programs are forced into a **block-and-forget** posture: the message is removed, but the attacker infrastructure, financial rails, and campaign signals remain largely unobserved. Industry estimates and sourced figures are documented in [Problem Statement](docs/01_problem_statement.md).
 
-> Industry estimates and sourced figures are documented in [Problem Statement](docs/01_problem_statement.md).
+This creates a structural gap. There is little to no attribution across messages and campaigns, limited visibility into evolving TTPs and infrastructure reuse, and slow feedback loops on what actually works. Most organizations miss opportunities to generate intelligence from real-world interaction with threat actors.
 
-**This creates a structural gap:**
-- Little to no attribution across messages and campaigns
-- Limited visibility into evolving TTPs and infrastructure reuse
-- Slow feedback loops (what works, what doesn't, and why)
-- Missed opportunities to generate intelligence from real-world interaction
-
-> **What if every scam email could be converted into measurable threat intelligence — safely?**
+ScamBuster explores this gap by converting scam emails into measurable threat intelligence, safely and at scale.
 
 ---
 
@@ -135,13 +127,9 @@ Five specialized AI agents work in concert:
 
 ### Adaptive Strategy Selection (Applied Research)
 
-ScamBuster does not rely on a single fixed "best" conversational approach. Instead, it uses **adaptive strategy selection** to learn—per scam category—which safe persona/response patterns maximize **intelligence yield** under strict constraints.
+ScamBuster does not rely on a single fixed "best" conversational approach. Instead, it uses **adaptive strategy selection** to learn, per scam category, which safe persona/response patterns maximize **intelligence yield** under strict constraints.
 
-**Key ideas:**
-- **Context-aware:** strategies are selected per scam type (e.g., BEC, lottery, romance, refund…).
-- **Measurable outcomes:** the system optimizes for *defensive* signals (e.g., indicators revealed, validated artifacts, sustained interaction) while controlling cost and safety.
-- **Safety-first:** every response is gated by validation rules and policy checks before being sent.
-- **Continuous improvement:** performance is monitored over time, enabling data-driven iteration rather than intuition.
+Strategies are selected based on scam type (BEC, lottery, romance, refund, etc.). The system optimizes for defensive signals such as indicators revealed, validated artifacts, and sustained interaction, while controlling cost and safety. Every response is gated by validation rules and policy checks before being sent. Performance is monitored over time, enabling data-driven iteration rather than intuition.
 
 | Aspect | Summary |
 |--------|---------|
@@ -247,10 +235,7 @@ To prevent misuse by adversaries, this repository contains **documentation only*
 
 > **Eligibility**: Access is granted for defensive security, research, or fraud prevention purposes only. No access for offensive use, scam operations, or purposes that conflict with the project's ethical guidelines.
 
-**Operational boundaries:**
-- **Inbound-only engagement** — we respond to scam emails already received, never initiate contact
-- **No impersonation** — no pretending to be real organizations, brands, or individuals (personas are synthetic role patterns, non-identifying)
-- **No unauthorized access** — no hack-back, no exploitation of scammer infrastructure
+**Operational boundaries:** The system only responds to scam emails already received and never initiates contact. There is no impersonation of real organizations, brands, or individuals (personas are synthetic role patterns, non-identifying). There is no unauthorized access, no hack-back, and no exploitation of scammer infrastructure.
 
 ### Pilot Program
 
@@ -272,7 +257,7 @@ To prevent misuse by adversaries, this repository contains **documentation only*
 |---|---|
 | **Project lead** | Laurent Giovannoni |
 | **LinkedIn** | [linkedin.com/in/giovannonilaurent](https://linkedin.com/in/giovannonilaurent) |
-| **Context** | E-MSc Cybersecurity — Master's Thesis |
+| **Context** | E-MSc Cybersecurity, Master's Thesis |
 | **Demo request** | Open a [GitHub Issue](../../issues) (private requests welcome) |
 | **Security** | See [SECURITY.md](SECURITY.md) for responsible disclosure |
 
@@ -321,10 +306,6 @@ To prevent misuse by adversaries, this repository contains **documentation only*
 - **Dataset**: CC BY-NC-SA 4.0 (anonymized, February 2026)
 
 ---
-
-<p align="center">
-  <strong>Transforming scam threats into threat intelligence through adaptive AI</strong>
-</p>
 
 <p align="center">
   <a href="docs/01_problem_statement.md">Learn More</a> •
