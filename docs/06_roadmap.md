@@ -1,6 +1,6 @@
 # Roadmap
 
-> **Last updated**: 2025-12-17
+> **Last updated**: 2026-02-02
 
 ## Project Timeline Overview
 
@@ -32,8 +32,8 @@ Build the core platform with multi-agent LLM architecture and production-grade i
 | Multi-agent LLM architecture | ✅ | 5 specialized agents |
 | Hybrid IOC extraction | ✅ | 100% precision, 34 types |
 | Double validation pipeline | ✅ | 95% approval rate |
-| Production deployment | ✅ | 30 days continuous, 0 incidents |
-| Metrics collection | ✅ | 150 conversations, 2,213 IOCs |
+| Production deployment | ✅ | 60 days continuous, 0 incidents |
+| Metrics collection | ✅ | +1K conversations, +20K IOCs |
 | DDD backend architecture | ✅ | 955 automated tests |
 | JWT authentication | ✅ | HS256, refresh rotation |
 
@@ -41,10 +41,10 @@ Build the core platform with multi-agent LLM architecture and production-grade i
 
 | Metric | Value |
 |--------|-------|
-| **Production conversations** | 150 |
-| **IOCs captured** | 2,213 |
-| **System uptime** | 100% (30 days) |
-| **Total cost** | €0.52 |
+| **Production conversations** | +1K |
+| **IOCs captured** | +20K |
+| **System uptime** | 100% (60 days) |
+| **Total cost** | €5.2 |
 | **Cost per IOC** | €0.0002 |
 
 ---
@@ -129,14 +129,14 @@ Implement ε-greedy contextual bandit for automatic persona optimization.
 | December report | P0 | 📅 |
 | Presentation preparation | P1 | 📅 |
 
-### December Achievements (So Far)
+### Pilot Achievements (February 2026)
 
 | Metric | Achieved | Target |
 |--------|----------|--------|
-| **Conversations** | 150 | 200+ |
-| **IOCs extracted** | 2,213 | 2,000+ |
-| **System uptime** | 30 days | 30 days |
-| **Total cost** | €0.52 | <€5 |
+| **Conversations** | +1K | 200+ |
+| **IOCs extracted** | +20K | 2,000+ |
+| **System uptime** | 60 days | 30 days |
+| **Total cost** | €5.2 | <€5 |
 | **Max engagement** | 48.7h | >24h |
 | **Persona variance** | 5.5× | Measured |
 
@@ -160,7 +160,7 @@ Scientifically validate Thompson Sampling superiority and collect publication-re
 
 | Target | Value |
 |--------|-------|
-| **Duration** | 30 days |
+| **Duration** | 60 days |
 | **Conversations per group** | 200+ |
 | **Statistical power** | 0.80 |
 | **Significance level** | α = 0.05 |

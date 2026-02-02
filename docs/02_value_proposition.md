@@ -8,7 +8,7 @@ ScamBuster is a **novel adaptive conversational honeypot** that combines:
 2. **Multi-agent LLM architecture** for realistic, scalable engagement
 3. **Hybrid IOC extraction** with 100% precision on audited sample (vs 44% regex-only)
 4. **Reinforcement learning** to automatically optimize strategies per scam type
-5. **Pilot-proven results**: 150 conversations, 2,213 IOCs, €0.52/month cost
+5. **Pilot-proven results**: +1K conversations, +20K IOCs, €5.2 total cost
 
 ---
 
@@ -138,20 +138,20 @@ Generator → PolicyGuard (hard rules) → LLM Validator (quality) → Send
 
 ---
 
-## Pilot Results (December 2025)
+## Pilot Results (February 2026)
 
-### Controlled Live Deployment (30 Days)
+### Controlled Live Deployment (60 Days)
 
 | Metric | Value |
 |--------|-------|
-| **Conversations** | 150 real scammers engaged |
-| **IOCs extracted** | 2,213 total |
+| **Conversations** | +1K real scammers engaged |
+| **IOCs extracted** | +20K total |
 | **High-value IOCs** | IBANs, phone numbers, crypto wallets |
-| **System uptime** | 30 days (0 incidents) |
-| **Total cost** | €0.52 |
+| **System uptime** | 60 days (0 incidents) |
+| **Total cost** | €5.2 |
 | **Cost per IOC** | €0.0002 |
 
-> **Metrics scope**: Figures from two observation windows in December 2025. Extended run (~1 month) for stability indicators; controlled validation run for ROI analysis. See [Evaluation Methodology](05_evaluation_methodology.md) for definitions.
+> **Metrics scope**: Figures from controlled live deployment (December 2025 - February 2026). 60-day run for stability, scale, and ROI indicators. See [Evaluation Methodology](05_evaluation_methodology.md) for definitions.
 
 ### Validation Dataset
 
@@ -179,26 +179,26 @@ From pilot data, identified patterns suggesting coordinated operations:
 
 ### Cost Structure
 
-| Component | Monthly Cost |
-|-----------|--------------|
-| LLM API calls (GPT-4o-mini) | €0.52 |
+| Component | Total Cost (60 days) |
+|-----------|----------------------|
+| LLM API calls (GPT-4o-mini) | €5.2 |
 | Infrastructure (Docker) | Existing |
 | Human intervention | Zero |
-| **Total** | **€0.52** |
+| **Total** | **€5.2** |
 
 ### Value Generated
 
 | Asset | Count | Estimated Value |
 |-------|-------|-----------------|
-| Total IOCs | 2,213 | €2-5 each |
-| High-value IOCs (IBANs, phones) | ~100 | €50-100 each |
+| Total IOCs | +20K | €2-5 each |
+| High-value IOCs (IBANs, phones) | ~500 | €50-100 each |
 | Campaign attributions | Multiple | €100-500 each |
 
 ### ROI Calculation
 
 At conservative estimates (€2/IOC for basic indicators):
-- **Base value**: 2,213 × €2 = €4,426
-- **ROI**: €4,426 / €0.52 = **~8,500×**
+- **Base value**: 20,000 × €2 = €40,000
+- **ROI**: €40,000 / €5.2 = **~7,700×**
 
 > **Note on value estimates**: These figures reflect **defensive operational value** for SOC/fraud-prevention workflows (triage time saved, faster blocking/reporting, campaign correlation). They do not imply resale and are internal estimates, not claims about commercial markets.
 
@@ -208,7 +208,7 @@ At conservative estimates (€2/IOC for basic indicators):
 
 | Capability | Traditional Honeypot | Manual Scambaiting | ScamBuster |
 |------------|---------------------|-------------------|------------|
-| **Scale** | Limited | Very limited | **150+/month demonstrated** |
+| **Scale** | Limited | Very limited | **+1K conversations demonstrated** |
 | **IOC precision** | Low (regex) | High (human) | **100% on audited sample** |
 | **Learning** | None | Slow (experience) | **Automatic** |
 | **Cost per conversation** | N/A | €50-100 (analyst) | **<€0.01** |

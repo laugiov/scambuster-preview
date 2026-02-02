@@ -68,7 +68,7 @@ Each agent has a single responsibility and can be optimized independently.
 - **Hybrid approach**: Regex patterns + LLM understanding
 - **34 IOC types**: emails, phones, IBANs, crypto wallets, URLs, etc.
 - **Contextual extraction**: LLM understands when text is an IOC vs normal content
-- **Pilot scale**: 2,213 IOCs extracted from 150 conversations
+- **Pilot scale**: +20K IOCs extracted from +1K conversations
 
 Compared to regex-only approaches (44% precision), this is a 2.3× improvement.
 
@@ -109,17 +109,17 @@ Currently 13 scam types:
 
 ### What's the ROI?
 
-Based on December 2025 pilot data (30 days):
+Based on February 2026 pilot data (60 days):
 
 | Metric | Value |
 |--------|-------|
-| **Operational cost** | €0.52 |
-| **Conversations** | 150 |
-| **IOCs captured** | 2,213 |
+| **Operational cost** | €5.2 |
+| **Conversations** | +1K |
+| **IOCs captured** | +20K |
 | **Cost per IOC** | €0.0002 |
-| **ROI** | ~8,500× |
+| **ROI** | ~7,700× |
 
-Even at conservative estimates (€2/IOC), ROI exceeds 8,500×.
+Even at conservative estimates (€2/IOC), ROI exceeds 7,700×.
 
 > **Note**: Value estimates reflect **internal defensive operational value** (SOC workflow efficiency, faster blocking/reporting, campaign correlation). These are not claims about commercial pricing or resale markets.
 
@@ -129,7 +129,7 @@ Even at conservative estimates (€2/IOC), ROI exceeds 8,500×.
 |-----------|------|
 | **LLM API** | ~€0.0002/message |
 | **Infrastructure** | Existing Docker host |
-| **Monthly actual** | €0.52 (150 conversations) |
+| **Total actual** | €5.2 (+1K conversations) |
 | **Hard limit** | €50/month configured |
 
 ### Is there a commercial offering?

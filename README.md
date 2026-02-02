@@ -7,7 +7,7 @@
 ![Tests](https://img.shields.io/badge/tests-955%20passing-brightgreen)
 ![License](https://img.shields.io/badge/license-code%20private%20|%20docs%20CC%20BY--NC--SA-lightgrey)
 
-> **Last updated**: 2025-12-17 | **Data period**: November-December 2025
+> **Last updated**: 2026-02-02 | **Data period**: December 2025 - February 2026
 
 ScamBuster turns inbound scam emails into **actionable threat intelligence** through **controlled, policy-driven engagement**.
 
@@ -67,24 +67,24 @@ Instead of discarding scam emails, ScamBuster creates an **observatory** that an
 
 ---
 
-## Pilot Results (December 2025)
+## Pilot Results (February 2026)
 
-### Controlled Live Deployment (30 Days)
+### Controlled Live Deployment (60 Days)
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| **Conversations** | 150 | Real scammers engaged |
-| **IOCs Extracted** | 2,213 | Emails, phones, IBANs, crypto wallets |
+| **Conversations** | +1K | Real scammers engaged |
+| **IOCs Extracted** | +20K | Emails, phones, IBANs, crypto wallets |
 | **IOC Precision** | 100% on audited sample (N=107) | vs 44% with regex-only baseline |
-| **System Uptime** | 30 days | Zero incidents, fully automated |
-| **Operational Cost** | €0.52 | Total LLM API cost |
+| **System Uptime** | 60 days | Zero incidents, fully automated |
+| **Operational Cost** | €5.2 | Total LLM API cost |
 | **Cost per IOC** | €0.0002 | Negligible operational expense |
 
 > **Metrics scope & definitions**
 >
-> Figures come from **two observation windows** in December 2025:
-> - **Extended run (~1 month)**: Used for stability and scale indicators (150 conversations, 2,213 IOCs, 30 days uptime)
-> - **Controlled validation run**: Used for ROI analysis and campaign-level attribution
+> Figures come from **controlled live deployment** (December 2025 - February 2026):
+> - **60-day run**: Used for stability, scale, and ROI indicators (+1K conversations, +20K IOCs, 60 days uptime)
+> - **Controlled validation run**: Used for precision analysis and campaign-level attribution
 >
 > **IOC precision (100%)** = no false positives in audited sample (precision = TP / (TP + FP), N=107 messages).
 > Sample-based validation details are documented in [Evaluation Methodology](docs/05_evaluation_methodology.md).
@@ -104,7 +104,7 @@ The adaptive system discovered that:
 
 **Campaign Attribution**
 
-From 150 conversations, identified **coordinated operations**:
+From +1K conversations, identified **coordinated operations**:
 - Shared infrastructure (same IBANs across conversations)
 - Common TTPs (message templates, escalation patterns)
 - Geographic clustering (phone number prefixes)
@@ -283,7 +283,7 @@ To prevent misuse by adversaries, this repository contains **documentation only*
 1. **Methodological**: Reproducible protocol for adaptive honeypot evaluation
 2. **Technical**: Multi-agent LLM with double validation (95% approval vs 60-70% baseline)
 3. **Scientific**: Empirically validated adaptive engagement (p < 0.001, N=2,221)
-4. **Practical**: Demonstrated efficiency at pilot scale (€0.52 for 2,213 IOCs)
+4. **Practical**: Demonstrated efficiency at pilot scale (€5.2 for +20K IOCs)
 
 ### Citation
 

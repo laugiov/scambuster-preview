@@ -260,22 +260,22 @@ ScamBuster is deployed as a **containerized application** with:
 
 ## Scalability Considerations
 
-### Current State (December 2025)
+### Current State (February 2026)
 
 | Metric | Value |
 |--------|-------|
-| Active conversations | 150 (1 month) |
-| IOCs extracted | 2,213 total |
-| System uptime | 30 days (0 incidents) |
+| Active conversations | +1K (60 days) |
+| IOCs extracted | +20K total |
+| System uptime | 60 days (0 incidents) |
 | Infrastructure | Containerized, single host |
 
 ### Proven Capacity
 
 | Metric | Achieved |
 |--------|----------|
-| Conversations/month | 150 |
-| IOCs/month | 2,213 |
-| Cost/month | €0.52 |
+| Conversations (60 days) | +1K |
+| IOCs (60 days) | +20K |
+| Total cost | €5.2 |
 | Infrastructure | Same (sufficient headroom) |
 
 ### Future Scaling Options

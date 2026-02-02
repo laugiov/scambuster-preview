@@ -13,10 +13,10 @@ ScamBuster employs **rigorous, reproducible evaluation methods** to measure and 
 | Metric | Definition | Target | Status |
 |--------|------------|--------|--------|
 | **Engagement Duration** | Time from first response to conversation end | >1 hour median | 0.3h median, 48.7h max |
-| **IOCs per Conversation** | Total indicators extracted | >5 per conversation | 14.8 achieved (2,213/150) |
+| **IOCs per Conversation** | Total indicators extracted | >5 per conversation | 20 achieved (+20K/+1K) |
 | **High-Value IOC Rate** | % of IOCs that are actionable (IBAN, phone, crypto) | >10% | IBANs, phones, crypto captured |
 | **Conversation Completion Rate** | % of conversations reaching natural end | >30% | Measuring |
-| **System Uptime** | Continuous operation without incidents | >99% | 100% (30 days) |
+| **System Uptime** | Continuous operation without incidents | >99% | 100% (60 days) |
 
 ### Secondary Metrics
 
@@ -32,30 +32,30 @@ ScamBuster employs **rigorous, reproducible evaluation methods** to measure and 
 
 ## Observation Windows
 
-Metrics in this documentation come from **two distinct observation windows** in December 2025:
+Metrics in this documentation come from **controlled live deployment** (December 2025 - February 2026):
 
 | Window | Duration | Purpose | Key Metrics |
 |--------|----------|---------|-------------|
-| **Extended run** | ~1 month | Stability, scale, uptime | 150 conversations, 2,213 IOCs, 30 days uptime |
-| **Controlled validation** | 9-day focused run | ROI analysis, campaign attribution | Detailed cost/value analysis |
+| **Production run** | 60 days | Stability, scale, uptime, ROI | +1K conversations, +20K IOCs, 60 days uptime |
+| **Controlled validation** | Ongoing | Precision analysis, campaign attribution | Detailed cost/value analysis |
 
 This separation ensures appropriate context for each metric type.
 
 ---
 
-## Validation Completed (December 2025)
+## Validation Completed (February 2026)
 
-### Production Validation (30 Days)
+### Production Validation (60 Days)
 
-**Dataset**: 150 real conversations with active scammers (extended run)
+**Dataset**: +1K real conversations with active scammers
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| **Total IOCs** | 2,213 | Extracted automatically |
+| **Total IOCs** | +20K | Extracted automatically |
 | **High-value IOCs** | IBANs, phones, crypto | Actionable intelligence |
 | **Campaigns identified** | Multiple | Via IOC clustering |
-| **System uptime** | 100% | 30 days, 0 incidents |
-| **Total cost** | €0.52 | LLM API only |
+| **System uptime** | 100% | 60 days, 0 incidents |
+| **Total cost** | €5.2 | LLM API only |
 | **Cost per IOC** | €0.0002 | Extremely efficient |
 | **LLM approval rate** | 95% | With retry mechanism |
 
@@ -283,7 +283,7 @@ reward = 0.40 × duration_score
 
 | Dataset | Size | Availability | Format |
 |---------|------|--------------|--------|
-| **Production conversations** | 150+ | On request (NDA) | JSON |
+| **Production conversations** | +1K | On request (NDA) | JSON |
 | **Validation synthetic** | 2,221 | On request (NDA) | JSON |
 | **Anonymized corpus** | 600+ planned | Public (Feb 2026) | JSON + CSV |
 
@@ -303,7 +303,7 @@ reward = 0.40 × duration_score
 
 | Limitation | Impact | Mitigation |
 |------------|--------|------------|
-| **Sample size (production)** | 150 conversations, growing | Synthetic validation + ongoing scale |
+| **Sample size (production)** | +1K conversations, growing | Synthetic validation + ongoing scale |
 | **Selection bias** | Public scam sites may not represent all scams | Diversify sources |
 | **LLM dependency** | Proprietary model may change | Version pinning, logging |
 | **Synthetic ≠ real** | Preprod validation lacks real scammer behavior | Validate with production data |
@@ -314,7 +314,7 @@ reward = 0.40 × duration_score
 |-----------|---------|----------|
 | **Scam types** | Focused on email | Documented scope limitation |
 | **Languages** | English primarily | Note in results |
-| **Time period** | December 2025 | Temporal caveat in publication |
+| **Time period** | December 2025 - February 2026 | Temporal caveat in publication |
 
 ---
 
